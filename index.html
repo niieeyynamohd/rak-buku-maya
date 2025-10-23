@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan Sekolah Rendah - Virtual Bookshelf</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <header class="header">
+            <h1>📚 Perpustakaan Sekolah Rendah</h1>
+            <p>Selamat datang ke rak buku maya kami!</p>
+        </header>
+        
+        <section class="search-section">
+            <label for="search-input" class="sr-only">Cari buku</label>
+            <input type="text" id="search-input" class="search-input" placeholder="🔍 Cari buku kegemaran anda...">
+            <div class="category-filters">
+                <button class="filter-btn active" data-category="all">Semua</button>
+                <button class="filter-btn" data-category="cerita">Cerita</button>
+                <button class="filter-btn" data-category="sains">Sains</button>
+                <button class="filter-btn" data-category="matematik">Matematik</button>
+                <button class="filter-btn" data-category="sejarah">Sejarah</button>
+                <button class="filter-btn" data-category="bahasa">Bahasa</button>
+            </div>
+        </section>
+        
+        <section class="bookshelf">
+            <div class="shelf" id="shelf1"></div>
+            <div class="shelf" id="shelf2"></div>
+            <div class="shelf" id="shelf3"></div>
+        </section>
+        
+        <section class="stats">
+            <h3>📊 Statistik Perpustakaan</h3>
+            <div class="stat-item">📖 Jumlah Buku: <span id="total-books">0</span></div>
+            <div class="stat-item">👀 Buku Dilihat: <span id="viewed-books">0</span></div>
+            <div class="stat-item">⭐ Kategori Popular: <span id="popular-category">Cerita</span></div>
+        </section>
+    </main>
+    
+    <div class="book-modal" id="bookModal">
+        <div class="open-book" id="openBook">
+            <div class="book-spine"></div>
+            
+            <!-- Left Page -->
+            <div class="book-page left-page" id="leftPage">
+                <div class="page-content">
+                    <div class="page-header">
+                        <div class="page-title" id="leftPageTitle">Tajuk Buku</div>
+                        <div class="page-subtitle" id="leftPageSubtitle">Cerita Menarik</div>
+                    </div>
+                    <div class="page-text" id="leftPageText">
+                        Kandungan halaman kiri akan dipaparkan di sini...
+                    </div>
+                    <div class="page-number" id="leftPageNumber">Halaman 1</div>
+                </div>
+                <div class="page-corner" onclick="previousPage()"></div>
+            </div>
+            
+            <!-- Right Page -->
+            <div class="book-page right-page" id="rightPage">
+                <div class="page-content">
+                    <div class="page-header">
+                        <div class="page-title" id="rightPageTitle">Tajuk Buku</div>
+                        <div class="page-subtitle" id="rightPageSubtitle">Cerita Menarik</div>
+                    </div>
+                    <div class="page-text" id="rightPageText">
+                        Kandungan halaman kanan akan dipaparkan di sini...
+                    </div>
+                    <div class="page-number" id="rightPageNumber">Halaman 2</div>
+                </div>
+                <div class="page-corner" onclick="nextPage()"></div>
+            </div>
+            
+            <div class="book-controls">
+                <button class="control-btn close-btn" onclick="closeModal()">📚 Tutup Buku</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9931f3f2445a1fe1',t:'MTc2MTIzMDA0Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body>
+</html>
