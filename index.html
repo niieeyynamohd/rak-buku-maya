@@ -9,8 +9,11 @@
 <body>
     <main class="container">
         <header class="header">
-            <h1>📚 Perpustakaan Sekolah Rendah</h1>
-            <p>Selamat datang ke rak buku maya kami!</p>
+            <img src="src/logosk.jpeg" alt="Logo Perpustakaan" class="header-logo" width="70" height="70">
+            <div class="header-text">
+            <h1>Perpustakaan Rak Buku Maya</h1>
+            <p>Selamat datang ke rak buku Seri Perkasa SK Kem Pakit</p>
+            </div>
         </header>
         
         <section class="search-section">
@@ -41,37 +44,28 @@
     </main>
     
     <div class="book-modal" id="bookModal">
-        <div class="open-book" id="openBook">
-            <div class="book-spine"></div>
-            
-            <!-- Left Page -->
-            <div class="book-page left-page" id="leftPage">
-                <div class="page-content">
-                    <div class="page-header">
-                        <div class="page-title" id="leftPageTitle">Tajuk Buku</div>
-                        <div class="page-subtitle" id="leftPageSubtitle">Cerita Menarik</div>
-                    </div>
-                    <div class="page-text" id="leftPageText">
-                        Kandungan halaman kiri akan dipaparkan di sini...
-                    </div>
-                    <div class="page-number" id="leftPageNumber">Halaman 1</div>
+        <div class="book-wrapper">
+            <div class="book-3d" id="book3d">
+                <div class="book-cover-3d" id="bookCover">
+                    <div class="cover-title" id="coverTitle">Tajuk Buku</div>
+                    <div class="cover-image" id="coverImage">📖</div>
+                    <div class="cover-author" id="coverAuthor">Pengarang</div>
                 </div>
-                <div class="page-corner" onclick="previousPage()"></div>
-            </div>
-            
-            <!-- Right Page -->
-            <div class="book-page right-page" id="rightPage">
-                <div class="page-content">
-                    <div class="page-header">
-                        <div class="page-title" id="rightPageTitle">Tajuk Buku</div>
-                        <div class="page-subtitle" id="rightPageSubtitle">Cerita Menarik</div>
-                    </div>
-                    <div class="page-text" id="rightPageText">
-                        Kandungan halaman kanan akan dipaparkan di sini...
-                    </div>
-                    <div class="page-number" id="rightPageNumber">Halaman 2</div>
+                
+                <div class="book-spine-3d" id="bookSpine">Tajuk Buku</div>
+                
+                <div class="book-page-left" id="leftPage">
+                    <img class="page-image" id="leftPageImage" src="" alt="Halaman kiri">
+                    <div class="page-number" id="leftPageNumber">1</div>
                 </div>
-                <div class="page-corner" onclick="nextPage()"></div>
+                
+                <div class="book-page-right" id="rightPage">
+                    <img class="page-image" id="rightPageImage" src="" alt="Halaman kanan">
+                    <div class="page-number" id="rightPageNumber">2</div>
+                </div>
+                
+                <div class="page-nav prev-page" onclick="previousPage()">‹</div>
+                <div class="page-nav next-page" onclick="nextPage()">›</div>
             </div>
             
             <div class="book-controls">
@@ -81,6 +75,5 @@
     </div>
     
     <script src="script.js"></script>
-    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9931f3f2445a1fe1',t:'MTc2MTIzMDA0Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
 </body>
 </html>

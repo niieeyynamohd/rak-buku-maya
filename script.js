@@ -1,133 +1,225 @@
+
 const books = [
-    // Shelf 1 - Cerita & Dongeng
+    // BUKU KISAH YANG SEDIH - 25 GAMBAR
     { 
-        title: "Si Kancil", 
+        title: "Kisah Yang Sedih", 
+        category: "cerita", 
+        color: "#6c5ce7", 
+        author: "Julia Zamri",
+        description: "Sebuah kisah yang menyentuh hati tentang kehidupan dan perasaan.",
+        coverImage: "😢",
+        isImageBook: true,
+        pages: [
+            // Cover
+            "src/image/KisahSedih/images-0.jpg",
+            // Halaman 1-2
+            "src/kisahsedih/images-1.jpg",
+            "src/kisahsedih/images-2.jpg",
+            // Halaman 3-4
+            "src/kisahsedih/images-3.jpg",
+            "src/kisahsedih/images-4.jpg",
+            // Halaman 5-6
+            "src/kisahsedih/images-5.jpg",
+            "src/kisahsedih/images-6.jpg",
+            // Halaman 7-8
+            "src/kisahsedih/images-7.jpg",
+            "src/kisahsedih/images-8.jpg",
+            // Halaman 9-10
+            "src/kisahsedih/images-9.jpg",
+            "src/kisahsedih/images-10.jpg",
+            // Halaman 11-12
+            "src/kisahsedih/images-11.jpg",
+            "src/kisahsedih/images-12.jpg",
+            // Halaman 13-14
+            "src/kisahsedih/images-13.jpg",
+            "src/kisahsedih/images-14.jpg",
+            // Halaman 15-16
+            "src/kisahsedih/images-15.jpg",
+            "src/kisahsedih/images-16.jpg",
+            // Halaman 17-18
+            "src/kisahsedih/images-17.jpg",
+            "src/kisahsedih/images-18.jpg",
+            // Halaman 19-20
+            "src/kisahsedih/images-19.jpg",
+            "src/kisahsedih/images-20.jpg",
+            // Halaman 21-22
+            "src/kisahsedih/images-21.jpg",
+            "src/kisahsedih/images-22.jpg",
+            // Halaman 23-24
+            "src/kisahsedih/images-23.jpg",
+            "src/kisahsedih/images-24.jpg",
+            // Halaman 25
+            "src/kisahsedih/images-25.jpg"
+           
+        ]
+    },
+    
+    // BUKU CERITA GAMBAR - SI KANCIL
+    { 
+        title: "Si Kancil Bergambar", 
         category: "cerita", 
         color: "#ff6b6b", 
         author: "Cerita Rakyat Malaysia",
-        description: "Cerita klasik tentang Si Kancil yang bijak dan penuh akal. Belajar tentang kebijaksanaan melalui petualangan yang menarik!",
+        description: "Kisah Si Kancil dalam bentuk komik bergambar yang menarik!",
+        coverImage: "🦌",
+        isImageBook: true,
         pages: [
-            {
-                text: "Dahulu kala, di dalam hutan yang lebat, hiduplah seekor kancil yang sangat bijak dan pandai. Si Kancil terkenal dengan akalnya yang cerdik dan selalu dapat menyelesaikan masalah dengan cara yang unik.",
-                illustration: "🦌",
-                decorative: true,
-                quote: "Kecerdikan lebih berharga daripada kekuatan!"
-            },
-            {
-                text: "Pada suatu hari, Si Kancil merasa sangat dahaga. Dia berjalan mencari sungai untuk minum. Setelah berjalan jauh, akhirnya dia menemukan sebuah sungai yang jernih dan sejuk.",
-                illustration: "🏞️",
-                character: "Si Kancil: Kancil kecil yang bijak dan cerdik"
-            },
-            {
-                text: "Namun, di tepi sungai itu terdapat seekor buaya besar yang ganas. Buaya itu menghalang Si Kancil untuk minum air.",
-                illustration: "🐊",
-                quote: "'Hai Kancil kecil, jika kamu mahu minum air di sungaiku, kamu mesti membayar!' - Buaya Ganas"
-            },
-            {
-                text: "Si Kancil tidak takut. Dengan akalnya yang bijak, dia berkata, 'Wahai Buaya, aku mempunyai hadiah istimewa untukmu. Tetapi aku perlu minum air dahulu untuk memberitahu rahsia ini.' Buaya itu menjadi penasaran dan membenarkan Si Kancil minum.",
-                illustration: "💡",
-                moral: "Kecerdikan dan kebijaksanaan dapat mengatasi masalah yang sukar!"
-            }
+            // Cover
+            "https://picsum.photos/seed/sikancil-cover/400/600",
+            // Halaman 1-2
+            "https://picsum.photos/seed/sikancil1/400/600",
+            "https://picsum.photos/seed/sikancil2/400/600",
+            // Halaman 3-4
+            "https://picsum.photos/seed/sikancil3/400/600",
+            "https://picsum.photos/seed/sikancil4/400/600",
+            // Halaman 5-6
+            "https://picsum.photos/seed/sikancil5/400/600",
+            "https://picsum.photos/seed/sikancil6/400/600",
+            // Halaman 7-8
+            "https://picsum.photos/seed/sikancil7/400/600",
+            "https://picsum.photos/seed/sikancil8/400/600",
+            // Halaman 9-10
+            "https://picsum.photos/seed/sikancil9/400/600",
+            "https://picsum.photos/seed/sikancil10/400/600",
+            // Halaman 11-12
+            "https://picsum.photos/seed/sikancil11/400/600",
+            "https://picsum.photos/seed/sikancil12/400/600"
         ]
     },
+    
+    // BUKU ALAM SEKITAR
+    { 
+        title: "Alam Sekitar Indah", 
+        category: "sains", 
+        color: "#00b894", 
+        author: "Dr. Alam",
+        description: "Koleksi gambar-gambar indah alam sekitar Malaysia.",
+        coverImage: "🌿",
+        isImageBook: true,
+        pages: [
+            // Cover
+            "https://picsum.photos/seed/alam-cover/400/600",
+            // Halaman 1-2
+            "https://picsum.photos/seed/alam1/400/600",
+            "https://picsum.photos/seed/alam2/400/600",
+            // Halaman 3-4
+            "https://picsum.photos/seed/alam3/400/600",
+            "https://picsum.photos/seed/alam4/400/600",
+            // Halaman 5-6
+            "https://picsum.photos/seed/alam5/400/600",
+            "https://picsum.photos/seed/alam6/400/600",
+            // Halaman 7-8
+            "https://picsum.photos/seed/alam7/400/600",
+            "https://picsum.photos/seed/alam8/400/600",
+            // Halaman 9-10
+            "https://picsum.photos/seed/alam9/400/600",
+            "https://picsum.photos/seed/alam10/400/600"
+        ]
+    },
+    
+    // BUKU ANGKASA
+    { 
+        title: "Misteri Angkasa", 
+        category: "sains", 
+        color: "#6c5ce7", 
+        author: "Prof. Bintang",
+        description: "Jelajahi keindahan angkasa lepas melalui gambar-gambar menakjubkan!",
+        coverImage: "🚀",
+        isImageBook: true,
+        pages: [
+            // Cover
+            "https://picsum.photos/seed/angkasa-cover/400/600",
+            // Halaman 1-2
+            "https://picsum.photos/seed/angkasa1/400/600",
+            "https://picsum.photos/seed/angkasa2/400/600",
+            // Halaman 3-4
+            "https://picsum.photos/seed/angkasa3/400/600",
+            "https://picsum.photos/seed/angkasa4/400/600",
+            // Halaman 5-6
+            "https://picsum.photos/seed/angkasa5/400/600",
+            "https://picsum.photos/seed/angkasa6/400/600",
+            // Halaman 7-8
+            "https://picsum.photos/seed/angkasa7/400/600",
+            "https://picsum.photos/seed/angkasa8/400/600",
+            // Halaman 9-10
+            "https://picsum.photos/seed/angkasa9/400/600",
+            "https://picsum.photos/seed/angkasa10/400/600",
+            // Halaman 11-12
+            "https://picsum.photos/seed/angkasa11/400/600",
+            "https://picsum.photos/seed/angkasa12/400/600"
+        ]
+    },
+    
+    // BUKU DUNIA HEWAN
+    { 
+        title: "Dunia Haiwan", 
+        category: "sains", 
+        color: "#fdcb6e", 
+        author: "Dr. Haiwan",
+        description: "Kenali pelbagai jenis haiwan melalui gambar-gambar menarik!",
+        coverImage: "🦁",
+        isImageBook: true,
+        pages: [
+            // Cover
+            "https://picsum.photos/seed/haiwan-cover/400/600",
+            // Halaman 1-2
+            "https://picsum.photos/seed/haiwan1/400/600",
+            "https://picsum.photos/seed/haiwan2/400/600",
+            // Halaman 3-4
+            "https://picsum.photos/seed/haiwan3/400/600",
+            "https://picsum.photos/seed/haiwan4/400/600",
+            // Halaman 5-6
+            "https://picsum.photos/seed/haiwan5/400/600",
+            "https://picsum.photos/seed/haiwan6/400/600",
+            // Halaman 7-8
+            "https://picsum.photos/seed/haiwan7/400/600",
+            "https://picsum.photos/seed/haiwan8/400/600",
+            // Halaman 9-10
+            "https://picsum.photos/seed/haiwan9/400/600",
+            "https://picsum.photos/seed/haiwan10/400/600"
+        ]
+    },
+    
+    // Buku-buku lain (bukan buku gambar)
     { 
         title: "Puteri Gunung Ledang", 
         category: "cerita", 
         color: "#4ecdc4", 
         author: "Legenda Johor",
-        description: "Legenda indah tentang puteri yang cantik dari Gunung Ledang. Kisah cinta dan keajaiban dari tanah Melayu.",
-        pages: [
-            {
-                text: "Di puncak Gunung Ledang yang tinggi dan megah, tinggallah seorang puteri yang sangat cantik. Kecantikannya terkenal ke seluruh Nusantara, sehingga banyak raja dan pangeran yang ingin meminangnya.",
-                illustration: "👸",
-                decorative: true,
-                character: "Puteri Gunung Ledang: Puteri ajaib yang cantik dan bijaksana"
-            },
-            {
-                text: "Puteri Gunung Ledang mempunyai kuasa ajaib. Dia dapat mengawal cuaca, menyembuhkan penyakit, dan melindungi rakyat dari bahaya. Semua orang menghormati dan mengagumi kebijaksanaannya.",
-                illustration: "✨",
-                quote: "Kuasa yang sebenar datang dari kebijaksanaan dan belas kasihan."
-            },
-            {
-                text: "Sultan Mahmud Shah dari Melaka mendengar tentang kecantikan puteri ini. Dia menghantar utusan untuk meminang puteri tersebut. Namun, puteri memberikan syarat-syarat yang mustahil untuk dipenuhi.",
-                illustration: "👑",
-                character: "Sultan Mahmud Shah: Raja Melaka yang berkuasa"
-            },
-            {
-                text: "Antara syarat-syarat itu ialah tujuh dulang hati nyamuk, tujuh dulang hati kuman, sebatang jambatan emas dari Melaka ke Gunung Ledang, dan sebak air mata dara.",
-                illustration: "🌉",
-                moral: "Kadang-kadang 'tidak' adalah jawapan yang paling bijaksana."
-            }
-        ]
+        description: "Legenda indah tentang puteri yang cantik dari Gunung Ledang.",
+        coverImage: "👸",
+        isImageBook: false,
+        pages: ["Buku teks biasa..."]
     },
     { 
         title: "Bawang Putih Bawang Merah", 
         category: "cerita", 
         color: "#45b7d1", 
         author: "Dongeng Tradisional",
-        description: "Dongeng moral tentang kebaikan hati dan kesabaran. Pelajari nilai-nilai murni melalui cerita yang mengharukan.",
-        pages: [
-            "Bawang Putih adalah seorang gadis yang baik hati dan rajin. Dia tinggal bersama ibu tirinya dan kakak tirinya, Bawang Merah. Walaupun sering diperlakukan tidak adil, Bawang Putih tetap sabar dan pemurah.",
-            "Setiap hari, Bawang Putih melakukan semua kerja rumah. Dia memasak, membersihkan rumah, dan mencuci pakaian. Bawang Merah pula hanya bermalas-malasan dan memerintah Bawang Putih.",
-            "Pada suatu hari, ketika Bawang Putih sedang mencuci pakaian di sungai, sehelai kain terbang dibawa angin. Dia mengikuti kain itu dan tiba di sebuah rumah nenek yang baik hati.",
-            "Nenek itu sebenarnya adalah bidadari yang menyamar. Kerana kebaikan hati Bawang Putih, nenek memberikan labu ajaib yang penuh dengan emas dan permata. Ini mengajar kita bahawa kebaikan akan dibalas dengan kebaikan."
-        ]
+        description: "Dongeng moral tentang kebaikan hati dan kesabaran.",
+        coverImage: "👧",
+        isImageBook: false,
+        pages: ["Buku teks biasa..."]
     },
-    { title: "Sang Kancil & Buaya", category: "cerita", color: "#96ceb4", author: "Cerita Rakyat", description: "Petualangan Si Kancil yang cerdik menghadapi buaya-buaya lapar. Cerita penuh aksi dan kecerdikan!", pages: ["Cerita dimulakan...", "Halaman kedua...", "Halaman ketiga...", "Tamat"] },
-    { title: "Raja Bersiong", category: "cerita", color: "#feca57", author: "Legenda Kedah", description: "Legenda misteri tentang raja yang mempunyai taring. Kisah yang mengajar tentang keadilan dan kebenaran.", pages: ["Cerita dimulakan...", "Halaman kedua...", "Halaman ketiga...", "Tamat"] },
-    { title: "Cerita Rakyat Malaysia", category: "cerita", color: "#ff9ff3", author: "Koleksi Tradisional", description: "Koleksi cerita rakyat dari seluruh Malaysia. Warisan budaya yang kaya untuk generasi muda.", pages: ["Cerita dimulakan...", "Halaman kedua...", "Halaman ketiga...", "Tamat"] },
-    
-    // Shelf 2 - Sains & Matematik
-    { 
-        title: "Sains Mudah", 
-        category: "sains", 
-        color: "#54a0ff", 
-        author: "Dr. Ahmad", 
-        description: "Buku sains yang mudah difahami untuk pelajar sekolah rendah. Eksperimen mudah dan fakta menarik!", 
-        pages: [
-            {
-                text: "Sains adalah kajian tentang alam semesta di sekeliling kita. Dari tumbuhan yang tumbuh di taman hingga bintang-bintang di langit, semuanya adalah sebahagian daripada sains yang menakjubkan!",
-                illustration: "🔬",
-                decorative: true,
-                quote: "Sains membantu kita memahami dunia dengan lebih baik!"
-            },
-            {
-                text: "Mari kita mulakan dengan eksperimen mudah! Ambil segelas air dan masukkan garam. Aduk perlahan-lahan. Ke mana perginya garam itu? Garam telah larut dalam air!",
-                illustration: "🧪",
-                character: "Eksperimen: Pelarutan Garam dalam Air"
-            },
-            {
-                text: "Tahukah kamu bahawa tumbuhan memerlukan cahaya matahari untuk membuat makanan mereka sendiri? Proses ini dipanggil fotosintesis. Daun hijau menyerap cahaya matahari dan menghasilkan oksigen.",
-                illustration: "🌱",
-                quote: "Tumbuhan adalah 'chef' alam yang membuat makanan dari cahaya matahari!"
-            },
-            {
-                text: "Eksperimen seterusnya: Letakkan sebiji telur dalam gelas berisi air. Telur akan tenggelam. Sekarang tambah garam banyak-banyak dan aduk. Telur akan terapung!",
-                illustration: "🥚",
-                moral: "Sains penuh dengan kejutan yang menakjubkan!"
-            }
-        ]
-    },
-    { title: "Matematik Fun", category: "matematik", color: "#5f27cd", author: "Cikgu Siti", description: "Belajar matematik dengan cara yang menyeronokkan! Permainan nombor dan teka-teki yang mencabar minda.", pages: ["Matematik adalah mudah!", "Permainan nombor...", "Teka-teki...", "Tamat"] },
-    { title: "Alam Sekitar", category: "sains", color: "#00d2d3", author: "Prof. Hijau", description: "Mengenal flora dan fauna Malaysia. Belajar tentang kepentingan menjaga alam sekitar kita.", pages: ["Alam sekitar kita...", "Flora Malaysia...", "Fauna Malaysia...", "Tamat"] },
-    { title: "Angkasa Lepas", category: "sains", color: "#ff6348", author: "Dr. Astronomi", description: "Jelajahi misteri angkasa lepas! Planet, bintang, dan astronaut menanti untuk ditemui.", pages: ["Angkasa lepas...", "Planet-planet...", "Bintang-bintang...", "Tamat"] },
-    { title: "Nombor Ajaib", category: "matematik", color: "#2ed573", author: "Cikgu Matematik", description: "Dunia ajaib matematik dengan nombor-nombor yang menakjubkan. Belajar sambil bermain!", pages: ["Nombor ajaib...", "Permainan matematik...", "Teka-teki nombor...", "Tamat"] },
-    { title: "Tubuh Manusia", category: "sains", color: "#ffa502", author: "Dr. Biologi", description: "Mengenal sistem dalam tubuh manusia. Bagaimana jantung, paru-paru, dan otak berfungsi.", pages: ["Tubuh manusia...", "Sistem badan...", "Organ penting...", "Tamat"] },
-    
-    // Shelf 3 - Sejarah & Bahasa
-    { title: "Sejarah Malaysia", category: "sejarah", color: "#3742fa", author: "Prof. Sejarah", description: "Perjalanan sejarah Malaysia dari zaman purba hingga merdeka. Kenali wira-wira bangsa kita.", pages: ["Sejarah Malaysia...", "Zaman purba...", "Kemerdekaan...", "Tamat"] },
-    { title: "Bahasa Melayu", category: "bahasa", color: "#2f3542", author: "Cikgu Bahasa", description: "Panduan lengkap Bahasa Melayu untuk pelajar. Tatabahasa, karangan, dan puisi yang indah.", pages: ["Bahasa Melayu...", "Tatabahasa...", "Karangan...", "Tamat"] },
-    { title: "Hang Tuah", category: "sejarah", color: "#ff4757", author: "Sejarawan", description: "Kisah kepahlawanan Hang Tuah dan sahabat-sahabatnya. Semangat patriotik yang menginspirasi.", pages: ["Hang Tuah...", "Lima sahabat...", "Kepahlawanan...", "Tamat"] },
-    { title: "English Fun", category: "bahasa", color: "#7bed9f", author: "Teacher Mary", description: "Learn English in a fun way! Games, songs, and activities to improve your English skills.", pages: ["Learning English...", "Fun activities...", "Games and songs...", "The End"] },
-    { title: "Kesultanan Melaka", category: "sejarah", color: "#70a1ff", author: "Ahli Sejarah", description: "Zaman kegemilangan Kesultanan Melaka sebagai pusat perdagangan dunia. Sejarah yang membanggakan.", pages: ["Kesultanan Melaka...", "Pusat perdagangan...", "Zaman kegemilangan...", "Tamat"] },
-    { title: "Pantun & Peribahasa", category: "bahasa", color: "#dda0dd", author: "Penyair", description: "Koleksi pantun dan peribahasa Melayu yang indah. Warisan sastera untuk dihayati.", pages: ["Pantun Melayu...", "Peribahasa...", "Warisan sastera...", "Tamat"] }
+    { title: "Sains Mudah", category: "sains", color: "#54a0ff", author: "Dr. Ahmad", description: "Buku sains yang mudah difahami.", coverImage: "🔬", isImageBook: false, pages: ["Buku teks biasa..."] },
+    { title: "Matematik Fun", category: "matematik", color: "#5f27cd", author: "Cikgu Siti", description: "Belajar matematik dengan cara yang menyeronokkan!", coverImage: "🔢", isImageBook: false, pages: ["Buku teks biasa..."] },
+    { title: "Sejarah Malaysia", category: "sejarah", color: "#3742fa", author: "Prof. Sejarah", description: "Perjalanan sejarah Malaysia.", coverImage: "🇲🇾", isImageBook: false, pages: ["Buku teks biasa..."] },
+    { title: "Bahasa Melayu", category: "bahasa", color: "#2f3542", author: "Cikgu Bahasa", description: "Panduan lengkap Bahasa Melayu.", coverImage: "📝", isImageBook: false, pages: ["Buku teks biasa..."] },
+    { title: "Hang Tuah", category: "sejarah", color: "#ff4757", author: "Sejarawan", description: "Kisah kepahlawanan Hang Tuah.", coverImage: "⚔️", isImageBook: false, pages: ["Buku teks biasa..."] },
+    { title: "English Fun", category: "bahasa", color: "#7bed9f", author: "Teacher Mary", description: "Learn English in a fun way!", coverImage: "🇬🇧", isImageBook: false, pages: ["Buku teks biasa..."] },
+    { title: "Kesultanan Melaka", category: "sejarah", color: "#70a1ff", author: "Ahli Sejarah", description: "Zaman kegemilangan Kesultanan Melaka.", coverImage: "🏰", isImageBook: false, pages: ["Buku teks biasa..."] },
+    { title: "Pantun & Peribahasa", category: "bahasa", color: "#dda0dd", author: "Penyair", description: "Koleksi pantun dan peribahasa Melayu.", coverImage: "🎭", isImageBook: false, pages: ["Buku teks biasa..."] }
 ];
 
+// Global variables
 let viewedBooks = 0;
 let currentFilter = 'all';
 let currentBook = null;
 let currentPageIndex = 0;
+let isFlipping = false;
+let isBookOpen = false;
 
+// Function to create book element
 function createBook(book, index) {
     const bookElement = document.createElement('div');
     bookElement.className = 'book';
@@ -138,6 +230,7 @@ function createBook(book, index) {
     return bookElement;
 }
 
+// Function to render books on shelves
 function renderBooks() {
     const shelves = [
         document.getElementById('shelf1'),
@@ -164,145 +257,195 @@ function renderBooks() {
     updateStats();
 }
 
+// Function to open book modal
 function openModal(book) {
     currentBook = book;
     currentPageIndex = 0;
+    isBookOpen = false;
+    isFlipping = false;
     
-    // Show modal with animation
+    // Show modal
     document.getElementById('bookModal').style.display = 'flex';
     
-    // Reset page positions
-    document.getElementById('leftPage').classList.remove('page-flip-left');
-    document.getElementById('rightPage').classList.remove('page-flip-right');
+    // Set book cover
+    document.getElementById('coverTitle').textContent = book.title;
+    document.getElementById('coverImage').textContent = book.coverImage || '📖';
+    document.getElementById('coverAuthor').textContent = book.author;
+    document.getElementById('bookSpine').textContent = book.title;
     
-    // Update page content
-    updatePages();
+    // Set book color
+    document.getElementById('bookCover').style.setProperty('--book-color', book.color);
+    
+    // Reset book state
+    const book3d = document.getElementById('book3d');
+    const bookCover = document.getElementById('bookCover');
+    const leftPage = document.getElementById('leftPage');
+    const rightPage = document.getElementById('rightPage');
+    
+    book3d.style.transform = 'rotateY(0deg)';
+    bookCover.style.transform = 'rotateY(0deg)';
+    leftPage.style.transform = 'rotateY(0deg)';
+    rightPage.style.transform = 'rotateY(0deg)';
+    
+    // Initially show cover
+    bookCover.style.display = 'flex';
+    leftPage.style.display = 'none';
+    rightPage.style.display = 'none';
+    
+    // Update navigation buttons
+    updateNavigation();
     
     viewedBooks++;
     updateStats();
 }
 
-function updatePages() {
-    if (!currentBook || !currentBook.pages) return;
+// Function to open book (flip cover)
+function openBook() {
+    if (isFlipping || isBookOpen) return;
     
-    const leftPageIndex = currentPageIndex;
-    const rightPageIndex = currentPageIndex + 1;
+    isFlipping = true;
+    
+    const bookCover = document.getElementById('bookCover');
+    const leftPage = document.getElementById('leftPage');
+    const rightPage = document.getElementById('rightPage');
+    
+    // Flip cover to open book
+    bookCover.classList.add('page-flip');
+    
+    setTimeout(() => {
+        bookCover.style.display = 'none';
+        leftPage.style.display = 'flex';
+        rightPage.style.display = 'flex';
+        
+        // Update page content
+        updatePageContent();
+        
+        bookCover.classList.remove('page-flip');
+        isBookOpen = true;
+        isFlipping = false;
+    }, 800);
+}
+
+// Function to update page content
+function updatePageContent() {
+    if (!currentBook || !isBookOpen) return;
+    
+    const leftPageIndex = currentPageIndex * 2;
+    const rightPageIndex = currentPageIndex * 2 + 1;
     
     // Update left page
     if (leftPageIndex < currentBook.pages.length) {
-        const leftPageData = currentBook.pages[leftPageIndex];
-        document.getElementById('leftPageTitle').textContent = currentBook.title;
-        document.getElementById('leftPageSubtitle').textContent = `Oleh: ${currentBook.author}`;
-        
-        if (typeof leftPageData === 'string') {
-            document.getElementById('leftPageText').innerHTML = leftPageData;
-        } else {
-            document.getElementById('leftPageText').innerHTML = createRichPageContent(leftPageData);
-        }
+        const leftPageImage = document.getElementById('leftPageImage');
+        leftPageImage.src = currentBook.pages[leftPageIndex];
+        leftPageImage.style.display = 'block';
         document.getElementById('leftPageNumber').textContent = `${leftPageIndex + 1}`;
     } else {
-        document.getElementById('leftPageText').innerHTML = '<div class="moral-lesson">Tamat</div>';
+        document.getElementById('leftPageImage').style.display = 'none';
         document.getElementById('leftPageNumber').textContent = '';
     }
     
     // Update right page
     if (rightPageIndex < currentBook.pages.length) {
-        const rightPageData = currentBook.pages[rightPageIndex];
-        document.getElementById('rightPageTitle').textContent = currentBook.title;
-        document.getElementById('rightPageSubtitle').textContent = `Oleh: ${currentBook.author}`;
-        
-        if (typeof rightPageData === 'string') {
-            document.getElementById('rightPageText').innerHTML = rightPageData;
-        } else {
-            document.getElementById('rightPageText').innerHTML = createRichPageContent(rightPageData);
-        }
+        const rightPageImage = document.getElementById('rightPageImage');
+        rightPageImage.src = currentBook.pages[rightPageIndex];
+        rightPageImage.style.display = 'block';
         document.getElementById('rightPageNumber').textContent = `${rightPageIndex + 1}`;
     } else {
-        document.getElementById('rightPageText').innerHTML = '<div class="moral-lesson">Terima kasih kerana membaca! 📚✨</div>';
+        document.getElementById('rightPageImage').style.display = 'none';
         document.getElementById('rightPageNumber').textContent = '';
     }
     
-    // Show/hide page corners based on available pages
-    const leftCorner = document.querySelector('.left-page .page-corner');
-    const rightCorner = document.querySelector('.right-page .page-corner');
-    
-    leftCorner.style.display = currentPageIndex > 0 ? 'block' : 'none';
-    rightCorner.style.display = (currentPageIndex + 2) < currentBook.pages.length ? 'block' : 'none';
+    updateNavigation();
 }
 
-function createRichPageContent(pageData) {
-    let content = '';
-    
-    // Add illustration
-    if (pageData.illustration) {
-        content += `<div class="page-illustration">${pageData.illustration}</div>`;
-    }
-    
-    // Add decorative border if specified
-    if (pageData.decorative) {
-        content += '<div class="decorative-border"></div>';
-    }
-    
-    // Add main text
-    content += `<div>${pageData.text}</div>`;
-    
-    // Add quote if present
-    if (pageData.quote) {
-        content += `<div class="story-quote">${pageData.quote}</div>`;
-    }
-    
-    // Add character box if present
-    if (pageData.character) {
-        content += `<div class="character-box"><strong>Watak:</strong><br>${pageData.character}</div>`;
-    }
-    
-    // Add moral lesson if present
-    if (pageData.moral) {
-        content += `<div class="moral-lesson"><strong>Pengajaran:</strong><br>${pageData.moral}</div>`;
-    }
-    
-    return content;
-}
-
+// Function to go to next page
 function nextPage() {
-    if (!currentBook) return;
+    if (isFlipping) return;
     
-    if (currentPageIndex + 2 < currentBook.pages.length) {
-        // Animate right page flip
+    if (!isBookOpen) {
+        openBook();
+        return;
+    }
+    
+    const maxPage = Math.ceil(currentBook.pages.length / 2) - 1;
+    if (currentPageIndex < maxPage) {
+        isFlipping = true;
+        
         const rightPage = document.getElementById('rightPage');
         rightPage.classList.add('page-flip-right');
         
         setTimeout(() => {
-            currentPageIndex += 2;
-            updatePages();
+            currentPageIndex++;
+            updatePageContent();
             rightPage.classList.remove('page-flip-right');
-        }, 300);
+            isFlipping = false;
+        }, 800);
     }
 }
 
+// Function to go to previous page
 function previousPage() {
-    if (!currentBook) return;
+    if (isFlipping || !isBookOpen) return;
     
     if (currentPageIndex > 0) {
-        // Animate left page flip
+        isFlipping = true;
+        
         const leftPage = document.getElementById('leftPage');
-        leftPage.classList.add('page-flip-left');
+        leftPage.classList.add('page-flip');
         
         setTimeout(() => {
-            currentPageIndex -= 2;
-            if (currentPageIndex < 0) currentPageIndex = 0;
-            updatePages();
-            leftPage.classList.remove('page-flip-left');
-        }, 300);
+            currentPageIndex--;
+            updatePageContent();
+            leftPage.classList.remove('page-flip');
+            isFlipping = false;
+        }, 800);
     }
 }
 
+// Function to update navigation buttons
+function updateNavigation() {
+    const prevBtn = document.querySelector('.prev-page');
+    const nextBtn = document.querySelector('.next-page');
+    
+    if (!isBookOpen) {
+        prevBtn.style.display = 'none';
+        nextBtn.style.display = 'block';
+        nextBtn.textContent = '›';
+    } else {
+        prevBtn.style.display = 'block';
+        nextBtn.style.display = 'block';
+        prevBtn.textContent = '‹';
+        nextBtn.textContent = '›';
+        
+        const maxPage = Math.ceil(currentBook.pages.length / 2) - 1;
+        if (currentPageIndex <= 0) {
+            prevBtn.style.opacity = '0.3';
+            prevBtn.style.cursor = 'default';
+        } else {
+            prevBtn.style.opacity = '1';
+            prevBtn.style.cursor = 'pointer';
+        }
+        
+        if (currentPageIndex >= maxPage) {
+            nextBtn.style.opacity = '0.3';
+            nextBtn.style.cursor = 'default';
+        } else {
+            nextBtn.style.opacity = '1';
+            nextBtn.style.cursor = 'pointer';
+        }
+    }
+}
+
+// Function to close modal
 function closeModal() {
     document.getElementById('bookModal').style.display = 'none';
     currentBook = null;
     currentPageIndex = 0;
+    isBookOpen = false;
+    isFlipping = false;
 }
 
+// Function to update statistics
 function updateStats() {
     const filteredBooks = currentFilter === 'all' 
         ? books 
@@ -370,5 +513,7 @@ document.getElementById('bookModal').addEventListener('click', function(e) {
     }
 });
 
-// Initialize the bookshelf
-renderBooks();
+// Initialize the bookshelf when page loads
+window.addEventListener('DOMContentLoaded', function() {
+    renderBooks();
+});
