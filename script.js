@@ -11,7 +11,8 @@ const books = [
         isImageBook: true,
         pages: [
             // Cover
-            "src/image/KisahSedih/images-0.jpg",
+            "src/KisahSedih/images-0.jpg",
+
             // Halaman 1-2
             "src/kisahsedih/images-1.jpg",
             "src/kisahsedih/images-2.jpg",
