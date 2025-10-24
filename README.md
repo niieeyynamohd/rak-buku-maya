@@ -1,6 +1,6 @@
 📚 Rak Buku Maya
 
-🔗 Demo: Rak Buku Maya (GitHub Pages)
+🔗 [Rak Buku Maya](https://niieeyynamohd.github.io/rak-buku-maya/)
 
 Rak Buku Maya ialah sebuah projek perpustakaan digital interaktif yang dibangunkan menggunakan HTML, CSS, dan JavaScript.
 Pengguna boleh memilih buku dan membaca secara digital, lengkap dengan paparan halaman bergambar untuk pengalaman membaca yang lebih menarik.
