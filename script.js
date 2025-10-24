@@ -14,43 +14,43 @@ const books = [
             "src/KisahSedih/images-0.jpg",
 
             // Halaman 1-2
-            "src/kisahsedih/images-1.jpg",
-            "src/kisahsedih/images-2.jpg",
+            "src/KisahSedih/images-1.jpg",
+            "src/KisahSedih/images-2.jpg",
             // Halaman 3-4
-            "src/kisahsedih/images-3.jpg",
-            "src/kisahsedih/images-4.jpg",
+            "src/KisahSedih/images-3.jpg",
+            "src/KisahSedih/images-4.jpg",
             // Halaman 5-6
-            "src/kisahsedih/images-5.jpg",
-            "src/kisahsedih/images-6.jpg",
+            "src/KisahSedih/images-5.jpg",
+            "src/KisahSedih/images-6.jpg",
             // Halaman 7-8
-            "src/kisahsedih/images-7.jpg",
-            "src/kisahsedih/images-8.jpg",
+            "src/KisahSedih/images-7.jpg",
+            "src/KisahSedih/images-8.jpg",
             // Halaman 9-10
-            "src/kisahsedih/images-9.jpg",
-            "src/kisahsedih/images-10.jpg",
+            "src/KisahSedih/images-9.jpg",
+            "src/KisahSedih/images-10.jpg",
             // Halaman 11-12
-            "src/kisahsedih/images-11.jpg",
-            "src/kisahsedih/images-12.jpg",
+            "src/KisahSedih/images-11.jpg",
+            "src/KisahSedih/images-12.jpg",
             // Halaman 13-14
-            "src/kisahsedih/images-13.jpg",
-            "src/kisahsedih/images-14.jpg",
+            "src/KisahSedih/images-13.jpg",
+            "src/KisahSedih/images-14.jpg",
             // Halaman 15-16
-            "src/kisahsedih/images-15.jpg",
-            "src/kisahsedih/images-16.jpg",
+            "src/KisahSedih/images-15.jpg",
+            "src/KisahSedih/images-16.jpg",
             // Halaman 17-18
-            "src/kisahsedih/images-17.jpg",
-            "src/kisahsedih/images-18.jpg",
+            "src/KisahSedih/images-17.jpg",
+            "src/KisahSedih/images-18.jpg",
             // Halaman 19-20
-            "src/kisahsedih/images-19.jpg",
-            "src/kisahsedih/images-20.jpg",
+            "src/KisahSedih/images-19.jpg",
+            "src/KisahSedih/images-20.jpg",
             // Halaman 21-22
-            "src/kisahsedih/images-21.jpg",
-            "src/kisahsedih/images-22.jpg",
+            "src/KisahSedih/images-21.jpg",
+            "src/KisahSedih/images-22.jpg",
             // Halaman 23-24
-            "src/kisahsedih/images-23.jpg",
-            "src/kisahsedih/images-24.jpg",
+            "src/KisahSedih/images-23.jpg",
+            "src/KisahSedih/images-24.jpg",
             // Halaman 25
-            "src/kisahsedih/images-25.jpg"
+            "src/KisahSedih/images-25.jpg"
            
         ]
     },
